@@ -1,7 +1,7 @@
- 🎙️ Tabqe 16 Podcast Website
+ 🎙️ Tabaghe 16 Podcast Website
 
 ![Project Banner](src/assets/16.png)  
-*Official website for Tabqe 16 Podcast*
+*Official website for Tabaghe 16 Podcast*
 
 ## 🛠️ Technologies
 - **Frontend**: React + TypeScript
