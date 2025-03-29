@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: IRANYekanExtraBold;
+    src: url("./Font/IRANYekanExtraBold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: IRANSans;
+    src: url("./Font/IRANSansX-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: IRANYekanBlack;
+    src: url("./Font/IRANYekanBlack.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: IRANYekanMedium;
+    src: url("./Font/IRANYekanMedium.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: IRANYekanRegular;
+    src: url("./Font/IRANYekanRegular.ttf") format("truetype");
+  }
+  
+}
