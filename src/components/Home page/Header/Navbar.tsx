@@ -9,7 +9,6 @@ const Navbar: React.FC = () => {
   };
 
   return (
-
     <nav className="w-[67.8125rem] m-auto font-IRANSans">
       <div className="flex justify-between items-center px-6 py-4">
         {/* لوگو و منو */}
@@ -61,18 +60,17 @@ const Navbar: React.FC = () => {
           </ul>
         </div>
 
-          {/* سرچ باکس */}
-          <div className="hidden sm:block relative w-[180px] sm:w-[230px] h-[30px]">
-            <input
-              type="text"
-              placeholder="جستجو..."
-              className="w-full h-full bg-transparent text-white placeholder-gray-300 border-b border-gray-300 focus:outline-none px-4"
-            />
-            <button className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-300 hover:text-white">
-              <i className="fas fa-search"></i>
-            </button>
-          </div>
-
+        {/* سرچ باکس */}
+        <div className="hidden sm:block relative w-[180px] sm:w-[230px] h-[30px]">
+          <input
+            type="text"
+            placeholder="جستجو..."
+            className="w-full h-full bg-transparent text-white placeholder-gray-300 border-b border-gray-300 focus:outline-none px-4"
+          />
+          <button className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-300 hover:text-white">
+            <i className="fas fa-search"></i>
+          </button>
+        </div>
 
         {/* دکمه منوی موبایل */}
         <div className="md:hidden">
@@ -83,7 +81,7 @@ const Navbar: React.FC = () => {
             <i className={`fas ${isOpen ? "fa-times" : "fa-bars"} text-2xl`} />
           </button>
         </div>
-
+      </div>
 
       {/* منوی موبایل */}
       <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
