@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="w-full bg-gray-700 font-IRANSans">
+    <nav className="w-full bg-black font-IRANSans">
       <div className="max-w-[67.8125rem] mx-auto">
         <div className="flex justify-between items-center px-4 sm:px-6 lg:px-8 py-4">
           {/* لوگو و منو */}
