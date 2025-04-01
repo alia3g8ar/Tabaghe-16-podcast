@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="w-full bg-gray-700 font-IRANSans">
+    <nav className="w-full bg-black font-IRANSans">
       <div className="max-w-[67.8125rem] mx-auto">
         <div className="flex justify-between items-center px-4 sm:px-6 lg:px-8 py-4">
           {/* لوگو و منو */}
@@ -25,35 +25,40 @@ const Navbar: React.FC = () => {
               <li>
                 <a
                   href="/"
-                  className="text-white hover:text-gray-300 transition-colors duration-300">
+                  className="text-white hover:text-gray-300 transition-colors duration-300"
+                >
                   صفحه اصلی
                 </a>
               </li>
               <li>
                 <a
                   href="/"
-                  className="text-white hover:text-gray-300 transition-colors duration-300">
+                  className="text-white hover:text-gray-300 transition-colors duration-300"
+                >
                   پادکست‌ها
                 </a>
               </li>
               <li>
                 <a
                   href="/"
-                  className="text-white hover:text-gray-300 transition-colors duration-300">
+                  className="text-white hover:text-gray-300 transition-colors duration-300"
+                >
                   ویدیوهای کوتاه
                 </a>
               </li>
               <li>
                 <a
                   href="/"
-                  className="text-white hover:text-gray-300 transition-colors duration-300">
+                  className="text-white hover:text-gray-300 transition-colors duration-300"
+                >
                   حمایت
                 </a>
               </li>
               <li>
                 <a
                   href="/"
-                  className="text-white hover:text-gray-300 transition-colors duration-300">
+                  className="text-white hover:text-gray-300 transition-colors duration-300"
+                >
                   همکاری
                 </a>
               </li>
@@ -76,7 +81,8 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-white hover:text-gray-300 focus:outline-none">
+              className="text-white hover:text-gray-300 focus:outline-none"
+            >
               <i
                 className={`fas ${isOpen ? "fa-times" : "fa-bars"} text-2xl`}
               />
@@ -89,27 +95,32 @@ const Navbar: React.FC = () => {
           <div className="px-4 py-2 space-y-2 bg-gray-700">
             <a
               href="/"
-              className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300">
+              className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300"
+            >
               صفحه اصلی
             </a>
             <a
               href="/"
-              className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300">
+              className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300"
+            >
               پادکست‌ها
             </a>
             <a
               href="/"
-              className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300">
+              className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300"
+            >
               ویدیوهای کوتاه
             </a>
             <a
               href="/"
-              className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300">
+              className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300"
+            >
               حمایت
             </a>
             <a
               href="/"
-              className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300">
+              className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300"
+            >
               همکاری
             </a>
           </div>
