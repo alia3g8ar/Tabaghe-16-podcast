@@ -1,14 +1,11 @@
 // src/App.tsx
 import React from "react";
-import Navbar from "./components/Home page/Header/Navbar";
-import Main from "./components/Home page/Header/Main";
+import Home from "./pages/Home page/Home";
 
-// کامپوننت اصلی برنامه
 const App = (): React.ReactElement => {
   return (
     <div className="bg-black">
-      <Navbar />
-      <Main />
+      <Home />
     </div>
   );
 };
