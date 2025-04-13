@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../../assets/Logo.png";
+import logo from "../assets/Logo.png";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Navbar: React.FC = () => {
@@ -10,11 +10,11 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="w-full max-w-7xl mx-auto font-IRANSans bg-black/90 backdrop-blur-sm sticky top-0 z-50">
+    <nav className="w-[80%] max-w-7xl mx-auto font-IRANSans bg-black/90 backdrop-blur-sm sticky top-[15px] z-50">
       <div className="flex justify-between items-center px-4 sm:px-6 py-4">
         {/* لوگو و منو */}
         <div className="flex items-center space-x-4 rtl:space-x-reverse">
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 ml-[20px]">
             <img
               src={logo}
               alt="طبقه 16"
@@ -25,35 +25,40 @@ const Navbar: React.FC = () => {
             <li>
               <a
                 href="/"
-                className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium">
+                className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium"
+              >
                 صفحه اصلی
               </a>
             </li>
             <li>
               <a
                 href="/podcasts"
-                className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium">
+                className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium"
+              >
                 پادکست‌ها
               </a>
             </li>
             <li>
               <a
                 href="/videos"
-                className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium">
+                className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium"
+              >
                 ویدیوهای کوتاه
               </a>
             </li>
             <li>
               <a
                 href="/support"
-                className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium">
+                className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium"
+              >
                 حمایت
               </a>
             </li>
             <li>
               <a
                 href="/collaboration"
-                className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium">
+                className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium"
+              >
                 همکاری
               </a>
             </li>
@@ -76,7 +81,8 @@ const Navbar: React.FC = () => {
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
-            className="text-white hover:text-gray-300 focus:outline-none transition-colors duration-300 p-2">
+            className="text-white hover:text-gray-300 focus:outline-none transition-colors duration-300 p-2"
+          >
             <i className={`fas ${isOpen ? "fa-times" : "fa-bars"} text-2xl`} />
           </button>
         </div>
@@ -86,31 +92,37 @@ const Navbar: React.FC = () => {
       <div
         className={`md:hidden transition-all duration-300 ease-in-out ${
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
-        }`}>
+        }`}
+      >
         <div className="px-4 py-2 space-y-1 bg-gray-800/95 backdrop-blur-sm">
           <a
             href="/"
-            className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium">
+            className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium"
+          >
             صفحه اصلی
           </a>
           <a
             href="/podcasts"
-            className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium">
+            className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium"
+          >
             پادکست‌ها
           </a>
           <a
             href="/videos"
-            className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium">
+            className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium"
+          >
             ویدیوهای کوتاه
           </a>
           <a
             href="/support"
-            className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium">
+            className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium"
+          >
             حمایت
           </a>
           <a
             href="/collaboration"
-            className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium">
+            className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium"
+          >
             همکاری
           </a>
         </div>
