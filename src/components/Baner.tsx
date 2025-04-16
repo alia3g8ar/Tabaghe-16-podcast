@@ -7,10 +7,10 @@ import wave from "../assets/equalizer 1.png";
 export default function Main() {
   return (
     <>
-      <div className="bg-gray-200 text-white my-8 sm:mt-12 sm:mb-2 lg:mt-16 lg:mb-4 px-4 sm:px-6 lg:px-20 flex justify-center items-center">
-        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row lg:gap-40 gap-10">
+      <div className="select-none bg-gray-200 text-white my-8 sm:mt-12 sm:mb-2 lg:mt-16 lg:mb-4 px-4 sm:px-6 lg:px-20 flex justify-center items-center">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-[0px] lg:gap-40">
           {/* سمت راست - بخش متن */}
-          <div className="w-full sm:w-[90%] md:w-[440px] h-auto sm:h-[410px] mx-auto lg:mx-0 space-y-4 sm:space-y-6 bg-gray-900/50 p-4 sm:p-6 rounded-[12px] border border-gray-800/50">
+          <div className="w-full sm:w-[90%] md:w-[440px] h-auto sm:h-[410px] mx-auto lg:mx-0 space-y-4 sm:space-y-6  p-4 sm:p-6 md:mr-[3rem] lg:mr-0  rounded-[12px] border border-gray-800/50">
             <div className="space-y-2">
               <p className="font-normal text-xl sm:text-2xl text-gray-400 font-IRANYekanRegular text-center lg:text-right">
                 سهیل در
@@ -37,9 +37,9 @@ export default function Main() {
           </div>
 
           {/* سمت چپ - بخش تصاویر */}
-          <div className=" relative w-full sm:w-[500px] lg:w-full mx-auto lg:mx-0 flex flex-col items-center mt-[-40px] lg:mt-0 scale-[0.65] sm:scale-[0.7] md:scale-[0.75] lg:scale-[1] lg:top-[33px]">
+          <div className=" relative w-full sm:w-[500px] lg:w-full mx-auto lg:mx-0 flex flex-col items-center   scale-[0.65] sm:scale-[0.7] md:scale-[0.75] lg:scale-[1] lg:top-[33px]">
             {/* تصویر اصلی */}
-            <div className="relative w-[391px] h-[220px] top-[34px] bg-gray-800 rounded-[110px] border border-gray-700/50 overflow-hidden shadow-lg z-10">
+            <div className="relative w-[391px] h-[220px] top-[34px] right-[33%] md:right-[0px] bg-gray-800 rounded-[110px] border border-gray-700/50 overflow-hidden shadow-lg z-10">
               <img
                 src={image4}
                 alt="تصویر اصلی"
@@ -48,7 +48,7 @@ export default function Main() {
             </div>
 
             {/* تصاویر پس‌زمینه */}
-            <div className="absolute top-[6px] left-[300px] w-[295px] h-[166px] bg-gray-700/80 rounded-[83px] overflow-hidden opacity-60 z-0 border border-gray-700/50">
+            <div className="absolute top-[6px] left-[57%] md:left-[300px] w-[295px] h-[166px] bg-gray-700/80 rounded-[83px] overflow-hidden opacity-60 z-0 border border-gray-700/50">
               <img
                 src={image1}
                 alt="تصویر 1"
@@ -56,7 +56,7 @@ export default function Main() {
               />
             </div>
 
-            <div className="absolute top-[169px] left-[340px] w-[192px] h-[109px] bg-gray-700/80 rounded-[63.5px] overflow-hidden opacity-60 z-0 border border-gray-700/50">
+            <div className="absolute  top-[175px] md:top-[169px] left-[54%] lg:left-[340px] w-[192px] h-[109px] bg-gray-700/80 rounded-[63.5px] overflow-hidden opacity-60 z-0 border border-gray-700/50">
               <img
                 src={image2}
                 alt="تصویر 2"
@@ -64,7 +64,7 @@ export default function Main() {
               />
             </div>
 
-            <div className="absolute top-[255px] left-[195px] w-[174px] h-[97px] bg-gray-700/80 rounded-[360px] overflow-hidden opacity-60 z-0 border border-gray-700/50">
+            <div className="absolute md:block hidden  top-[255px] left-[195px] w-[174px] h-[97px] bg-gray-700/80 rounded-[360px] overflow-hidden opacity-60 z-0 border border-gray-700/50">
               <img
                 src={image3}
                 alt="تصویر 3"
@@ -73,7 +73,7 @@ export default function Main() {
             </div>
 
             {/* موج صدا */}
-            <div className="w-[281px] h-[201px] absolute top-[220px] left-[-30px] rounded-full overflow-hidden opacity-80">
+            <div className="md:block hidden  w-[281px] h-[201px] absolute top-[220px] left-[-30px] rounded-full overflow-hidden opacity-80">
               <img
                 src={wave}
                 alt="موج صدا"
