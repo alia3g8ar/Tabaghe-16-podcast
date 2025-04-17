@@ -34,11 +34,11 @@ const EpisodesStar = () => {
   return (
     <>
       <div className="w-full h-auto mt-2 md:mt-10">
-        <h4 className="mb-6 text-white mx-auto text-2xl sm:text-2xl lg:text-2xl font-IRANYekanExtraBold leading-tight text-center">
+        <h4 className=" mb-0 sm:mb-6 text-white mx-auto text-2xl sm:text-2xl lg:text-2xl font-IRANYekanExtraBold leading-tight text-center">
           اپیزود های منتخب
         </h4>
-        <div className="container mx-auto px-4 py-8 md:py-12">
-          <div className="grid grid-cols-2 scale-[0.95] sm:scale-[1] sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="container mx-auto px-2 py-0 sm:py-8 md:py-12">
+          <div className="grid grid-cols-2 scale-[0.80] sm:scale-[1] sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {episodes.map((episode, index) => (
               <div
                 key={index}
