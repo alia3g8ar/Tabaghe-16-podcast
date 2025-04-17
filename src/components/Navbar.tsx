@@ -10,8 +10,8 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="w-[80%] max-w-7xl mx-auto font-IRANSans bg-black/90 backdrop-blur-sm sticky top-[15px] z-50">
-      <div className="flex justify-between items-center px-4 sm:px-6 py-4">
+    <nav className="w-[100%] max-w-7xl  font-IRANSans bg-black backdrop-blur-sm sticky top-[0] pt-[20px] z-50">
+      <div className="w-[80%] mx-auto flex justify-between items-center px-4 sm:px-6 py-4">
         {/* لوگو و منو */}
         <div className="flex items-center space-x-4 rtl:space-x-reverse">
           <div className="flex-shrink-0 ml-[20px]">
@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
-        <div className="px-4 py-2 space-y-1 bg-gray-800/95 backdrop-blur-sm">
+        <div className="px-4 py-2 space-y-1  backdrop-blur-sm">
           <a
             href="/"
             className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium"
