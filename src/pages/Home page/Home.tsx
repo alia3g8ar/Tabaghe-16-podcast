@@ -1,4 +1,5 @@
 import Main from "../../components/Baner";
+import EpisodesStar from "../../components/EpisodesStar";
 import Listening16 from "../../components/Listening16";
 import Navbar from "../../components/Navbar";
 
@@ -8,6 +9,7 @@ const Home = (): React.ReactElement => {
       <Navbar />
       <Main />
       <Listening16 />
+      <EpisodesStar />
     </div>
   );
 };
