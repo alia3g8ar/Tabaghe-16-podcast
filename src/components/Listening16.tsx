@@ -6,48 +6,61 @@ import youtube from "../assets/youtube.png";
 import Group from "../assets/Group.png";
 
 export default function Listening16() {
+  const platforms = [
+    { src: feed, alt: "RSS Feed" },
+    { src: logoAppAppl, alt: "Apple Podcasts" },
+    { src: Group, alt: "Google Podcasts" },
+    { src: apple, alt: "Apple Music" },
+    { src: spotify, alt: "Spotify" },
+    { src: youtube, alt: "YouTube" },
+  ];
+
   return (
-    <>
+    <div className="w-full py-8 md:py-16 px-4">
       {/* بخش پلتفرم‌های پخش */}
-      <div className="w-full flex justify-center items-center">
-        <div className="w-[50%] sm:w-[80%] md:w-[70%] lg:w-[50.1875rem] sm:h-[12.125rem] sm:m-[5.5rem] border-2 border-gray-500 bg-gradient-to-bl from-[#11182780] to-[#ffffff00] rounded-[20px] sm:rounded-[35px] py-6 px-4">
-          <p className="font-IRANYekanBlack text-lg sm:text-xl text-center text-white mb-6 sm:pt-[18px]">
-            طبقه 16 را اینجا بشنوید
-          </p>
-          <div className="flex flex-wrap justify-center sm:justify-evenly items-center gap-6 sm:gap-[1px] w-full sm:w-auto sm:h-[50.97px] sm:mt-8 sm:mr-[70px]">
-            <img
-              src={feed}
-              alt="RSS Feed"
-              className="w-10 h-10 sm:w-auto sm:h-auto"
-            />
-            <img
-              src={logoAppAppl}
-              alt="Apple Podcasts"
-              className="w-10 h-10 sm:w-auto sm:h-auto"
-            />
-            <img
-              src={Group}
-              alt="Google Podcasts"
-              className="w-10 h-10 sm:w-auto sm:h-auto"
-            />
-            <img
-              src={apple}
-              alt="Apple Music"
-              className="w-10 h-10 sm:w-auto sm:h-auto"
-            />
-            <img
-              src={spotify}
-              alt="Spotify"
-              className="w-10 h-10 sm:w-auto sm:h-auto"
-            />
-            <img
-              src={youtube}
-              alt="YouTube"
-              className="w-10 h-10 sm:w-auto sm:h-auto"
-            />
+      <div className="max-w-6xl mx-auto flex justify-center items-center">
+        <div
+          className="w-full sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] 
+                    py-8 px-6 md:px-10 
+                    rounded-[20px] md:rounded-[35px] 
+                    relative overflow-hidden
+                    transition-all duration-300 ease-in-out
+                    hover:shadow-[0_0_15px_rgba(255,255,255,0.1)]"
+          style={{
+            background:
+              "linear-gradient(135deg, rgba(17, 24, 39, 0.8) 0%, rgba(17, 24, 39, 0.4) 100%)",
+          }}
+        >
+          {/* گرادیانت بوردر */}
+          <div className="absolute inset-0 rounded-[20px] md:rounded-[35px] p-[2px] overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-gray-500 via-gray-500 to-transparent opacity-50"></div>
+          </div>
+
+          <div className="relative z-10">
+            <h3 className="font-IRANYekanBlack text-xl md:text-2xl text-center text-white mb-8 md:mb-10">
+              طبقه ۱۶ را اینجا بشنوید
+            </h3>
+
+            <div className="grid grid-cols-6 gap-2 sm:gap-4 md:gap-6 justify-items-center">
+              {platforms.map((platform, index) => (
+                <div
+                  key={index}
+                  className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center 
+                            rounded-full p-1 sm:p-2 
+                            transition-all duration-300 ease-in-out
+                            hover:scale-110 cursor-pointer"
+                >
+                  <img
+                    src={platform.src}
+                    alt={platform.alt}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
