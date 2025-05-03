@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="w-[100%] pl-[13px] flex justify-center flex-col font-IRANSans bg-black backdrop-blur-sm sticky top-0 pt-4 z-50">
-      <div className="w-[98%] mx-auto flex justify-between items-center py-2 md:py-4">
+      <div className="w-[80%] mx-auto flex justify-between items-center py-2 md:py-4">
         {/* لوگو و منو */}
         <div className="flex items-center space-x-4 rtl:space-x-reverse">
           <div className="flex-shrink-0 mr-[20px] ml-[10px] md:ml-[20px]">

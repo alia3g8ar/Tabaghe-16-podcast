@@ -37,26 +37,26 @@ const EpisodesStar = () => {
         <h4 className=" mb-0 sm:mb-6 text-white mx-auto text-2xl sm:text-2xl lg:text-2xl font-IRANYekanExtraBold leading-tight text-center">
           اپیزود های منتخب
         </h4>
-        <div className="w-[100%] sm:w-[80%] mx-auto px-2 py-0 sm:py-8 md:py-12">
-          <div className="grid grid-cols-2 scale-[0.90] sm:scale-[1] sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="container mx-auto px-2 py-0 sm:py-8 md:py-12">
+          <div className="grid grid-cols-2 scale-[0.80] sm:scale-[1] sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {episodes.map((episode, index) => (
               <div
                 key={index}
-                className=" rounded-t-[5px] shadow-lg transform transition-transform duration-300 hover:scale-105"
+                className=" rounded-t-[10px] shadow-lg transform transition-transform duration-300 hover:scale-105"
               >
-                <div className="relative h-32 md:h-48 rounded-t-[35px] overflow-hidden">
+                <div className="relative h-48 md:h-56 rounded-t-[60px] overflow-hidden">
                   <img
                     src={episode.UrlImg}
                     alt={episode.title || "تصویر اپیزود"}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="bg-black py-2">
+                <div className="bg-black p-4">
                   <h4 className="text-white text-xl font-IRANYekanExtraBold leading-tight text-right mb-4 line-clamp-2">
                     {episode.title}
                   </h4>
                   {episode.guest && episode.time && (
-                    <div className="flex justify-between w-[100%] text-gray-500 mt-[22px] text-[12px] md:text-base font-IRANYekanExtraBold">
+                    <div className="flex flex-wrap justify-between text-gray-500 mt-[27px] text-sm md:text-base font-IRANYekanExtraBold">
                       <span>مهمان: {episode.guest}</span>
                       <span>{episode.time}</span>
                     </div>
