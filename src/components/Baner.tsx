@@ -7,7 +7,7 @@ import wave from "../assets/equalizer 1.png";
 export default function Main() {
   return (
     <>
-      <div className="select-none bg-gray-200 text-white my-8 sm:mt-8 sm:mb-2 lg:mt-16 lg:mb-4 px-4 sm:px-6 lg:px-20 flex justify-center items-center overflow-hidden">
+      <div className="select-none bg-gray-200 text-white mt-[1rem] mb-[2rem] sm:mt-8 sm:mb-2 lg:mt-16 lg:mb-4 px-4 sm:px-6 lg:px-20 flex justify-center items-center overflow-hidden">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-[0px] lg:gap-40">
           {/* سمت راست - بخش متن */}
           <div className="w-full sm:w-[90%] md:w-[440px] h-auto sm:h-[410px] mx-auto lg:mx-0 space-y-4 sm:space-y-6  p-4 sm:p-6 md:mr-[3rem] lg:mr-0  rounded-[12px] border border-gray-800/50">
