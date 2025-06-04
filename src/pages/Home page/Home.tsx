@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import Listening16 from "../../components/Listening16";
 import Navbar from "../../components/Navbar";
 import ShortVideos from "../../components/ShortVideos";
+import Sponsors from "../../components/Sponsors";
 
 const Home = (): React.ReactElement => {
   return (
@@ -14,7 +15,7 @@ const Home = (): React.ReactElement => {
       <Listening16 />
       <EpisodesStar />
       <EndEpisodes />
-      <Listening16 />
+      <Sponsors />
       <ShortVideos />
       <Footer />
     </div>

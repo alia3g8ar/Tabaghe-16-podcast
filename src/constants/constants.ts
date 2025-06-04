@@ -51,7 +51,7 @@ const platformsDark: PlatformDark[] = [
 
 const vectors: vector[] = [
   { src: vector1, alt: "twitter" },
-  // { src: vector2, alt: "vector2" },
+  { src: vector2, alt: "vector2" },
   { src: vector3, alt: "vector3" },
   { src: vector4, alt: "vector4" },
   { src: vector5, alt: "vector5" },
