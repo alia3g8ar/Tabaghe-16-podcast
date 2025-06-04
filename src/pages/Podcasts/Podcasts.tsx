@@ -2,11 +2,14 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar";
 import img from "../../assets/عکس 1.jfif";
+import Footer from "../../components/Footer";
 interface Video {
   id: number;
   title: string;
   youtube_url: string;
   thumbnail: string;
+  duration: string;
+  guest: string;
 }
 
 const Podcasts = (): React.ReactElement => {
@@ -113,6 +116,7 @@ const Podcasts = (): React.ReactElement => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
