@@ -15,7 +15,6 @@ import vector1 from "../assets/vector.png";
 import vector2 from "../assets/vector2.png";
 import vector3 from "../assets/vector3.png";
 import vector4 from "../assets/vector4.png";
-import vector5 from "../assets/vector5.png";
 import instagram from "../assets/instagram.png";
 
 interface Platform {
@@ -51,10 +50,9 @@ const platformsDark: PlatformDark[] = [
 
 const vectors: vector[] = [
   { src: vector1, alt: "twitter" },
-  // { src: vector2, alt: "vector2" },
+  { src: vector2, alt: "vector2" },
   { src: vector3, alt: "vector3" },
   { src: vector4, alt: "vector4" },
-  { src: vector5, alt: "vector5" },
   { src: instagram, alt: "Instagram" },
 ];
 
