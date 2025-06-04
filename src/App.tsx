@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Podcasts from "./pages/Podcasts/Podcasts";
 const App = (): React.ReactElement => {
   return (
-    <div className="bg-black">
+    <div className="bg-black select-none">
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
