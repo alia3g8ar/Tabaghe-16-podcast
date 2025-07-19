@@ -2,6 +2,7 @@ import Main from "../../components/Baner";
 import EndEpisodes from "../../components/EndEpisodes";
 import EpisodesStar from "../../components/EpisodesStar";
 import Footer from "../../components/Footer";
+import JoinCommunitySection from "../../components/JoinCommunitySection";
 import Listening16 from "../../components/Listening16";
 import Navbar from "../../components/Navbar";
 import ShortVideos from "../../components/ShortVideos";
@@ -17,6 +18,7 @@ const Home = (): React.ReactElement => {
       <EndEpisodes />
       <Sponsors />
       <ShortVideos />
+      <JoinCommunitySection />
       <Footer />
     </div>
   );

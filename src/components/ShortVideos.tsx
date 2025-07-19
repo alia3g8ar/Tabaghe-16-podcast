@@ -25,7 +25,7 @@ const shortVideos = [
 
 const ShortVideos = () => {
   return (
-    <div className="w-full bg-[#0f0f0f] py-10 flex justify-center">
+    <div className="w-full bg-black py-10 flex justify-center">
       <div className="w-[70%]">
         <h2 className="text-white text-center text-xl sm:text-2xl font-IRANYekanExtraBold mb-6">
           ویدیوهای کوتاه
