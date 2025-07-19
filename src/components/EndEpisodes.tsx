@@ -75,7 +75,7 @@ const EndEpisodes = () => {
                     {episode.title}
                   </h4>
                   {episode.guest && (
-                    <div className="flex justify-between w-[100%] text-gray-500 text-[12px] md:text-base font-IRANYekanExtraBold">
+                    <div className="flex justify-between w-[100%] text-gray-500 text-[12px] md:text-[13.5px] font-IRANYekanExtraBold">
                       <span>مهمان: {episode.guest}</span>
                     </div>
                   )}

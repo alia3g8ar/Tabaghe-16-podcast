@@ -56,7 +56,7 @@ const EpisodesStar = () => {
                     {episode.title}
                   </h4>
                   {episode.guest && episode.time && (
-                    <div className="flex justify-between w-[100%] text-gray-500 mt-[22px] text-[12px] md:text-base font-IRANYekanExtraBold">
+                    <div className="flex justify-between w-[100%] text-gray-500 mt-[22px] text-[12px] md:text-[14px] font-IRANYekanExtraBold">
                       <span>مهمان: {episode.guest}</span>
                       <span>{episode.time}</span>
                     </div>
