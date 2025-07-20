@@ -55,27 +55,35 @@ const JoinCommunitySection: React.FC<Props> = () => {
           </form>
         </div>
 
-        {/* تصویر - سمت راست */}
-        <div className="md:w-1/2 w-full mt-6 md:mt-0 md:ml-6 flex justify-center">
-          <div
-            className="relative"
-            style={{
-              width: "489px",
-              height: "219px",
-              borderTopLeftRadius: "35px",
-              borderBottomLeftRadius: "35px",
 
-              overflow: "hidden",
-              background:
-                "linear-gradient(72.49deg, #121212 -18.15%, rgba(0, 0, 0, 0.39) 100.93%)",
-            }}
-          >
-            <img
-              src={img}
-              alt="Join Community"
-              className="w-full h-full object-cover"
-            />
-          </div>
+
+
+        {/* تصویر - سمت راست */}
+        <div className="md:w-1/2 w-full mt-6 md:mt-0 md:ml-6 flex justify-center md:none">
+        <div
+  className="relative"
+  style={{
+    width: "489px",
+    height: "219px",
+    borderTopLeftRadius: "35px",
+    borderBottomLeftRadius: "35px",
+    overflow: "hidden",
+    background:
+      "linear-gradient(72.49deg, #121212 -18.15%, rgba(0, 0, 0, 0.39) 100.93%)",
+  }}
+>
+  <img
+    src={img}
+    alt="Join Community"
+    className="w-full h-full object-cover grayscale"
+  />
+</div>
+
+
+
+
+
+
         </div>
       </div>
     </div>

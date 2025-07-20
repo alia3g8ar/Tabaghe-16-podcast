@@ -15,6 +15,12 @@ const Navbar: React.FC = () => {
     setShowSearch(!showSearch);
   };
 
+
+    const handleClick = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+
   return (
     <nav className="w-[100%] pl-[13px] flex justify-center flex-col font-IRANSans bg-black backdrop-blur-sm sticky top-0 pt-4 z-50">
       <div className="w-[98%] mx-auto flex justify-between items-center py-2 md:py-4">
@@ -31,6 +37,7 @@ const Navbar: React.FC = () => {
             <li>
               <Link
                 to="/"
+                onClick={handleClick}
                 className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium"
               >
                 صفحه اصلی
@@ -39,6 +46,7 @@ const Navbar: React.FC = () => {
             <li>
               <Link
                 to="/podcasts"
+                onClick={handleClick}
                 className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium"
               >
                 پادکست‌ها
@@ -47,6 +55,7 @@ const Navbar: React.FC = () => {
             <li>
               <Link
                 to="/videos"
+                onClick={handleClick}
                 className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium"
               >
                 ویدیوهای کوتاه
@@ -55,6 +64,7 @@ const Navbar: React.FC = () => {
             <li>
               <Link
                 to="/support"
+                onClick={handleClick}
                 className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium"
               >
                 حمایت
@@ -63,6 +73,7 @@ const Navbar: React.FC = () => {
             <li>
               <Link
                 to="/collaboration"
+                onClick={handleClick}
                 className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium"
               >
                 همکاری
@@ -118,30 +129,35 @@ const Navbar: React.FC = () => {
         <div className="px-4 py-2 space-y-1 backdrop-blur-sm">
           <Link
             to="/"
+            onClick={handleClick}
             className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium"
           >
             صفحه اصلی
           </Link>
           <Link
             to="/podcasts"
+            onClick={handleClick}
             className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium"
           >
             پادکست‌ها
           </Link>
           <Link
             to="/videos"
+            onClick={handleClick}
             className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium"
           >
             ویدیوهای کوتاه
           </Link>
           <Link
             to="/support"
+            onClick={handleClick}
             className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium"
           >
             حمایت
           </Link>
           <Link
             to="/collaboration"
+            onClick={handleClick}
             className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium"
           >
             همکاری

@@ -2,143 +2,87 @@
   "videos": [
     {
       "id": 1,
-      "title": "معرفی و شروع کار",
+      "title": "تعبیر یک دنیا؛ واقعیت مجازی، واقعیت افزوده",
       "youtube_url": "https://www.youtube.com/embed/4XyQk7yNydk",
-      "thumbnail": "https://i.ytimg.com/vi/4XyQk7yNydk/hqdefault.jpg",
-      "guest": "مهمان نمونه 1"
+      "thumbnail": "/images/img_1.jfif",
+      "guest": " مجتبی طباطبایی"
     },
     {
       "id": 2,
-      "title": "داستان‌های استارتاپی",
+      "title": "Data Science at Digikala",
       "youtube_url": "https://www.youtube.com/embed/5zXyQk7yNyd",
-      "thumbnail": "https://i.ytimg.com/vi/5zXyQk7yNyd/hqdefault.jpg",
-      "guest": "مهمان نمونه 2"
+      "thumbnail": "/images/img_7.jpg",
+      "guest": "رضا شاه نظر"
     },
     {
       "id": 3,
-      "title": "چالش‌های کار تیمی",
+      "title":"Chef Entrepreneur",
       "youtube_url": "https://www.youtube.com/embed/6XyQk7yNydk",
-      "thumbnail": "https://i.ytimg.com/vi/6XyQk7yNydk/hqdefault.jpg",
-      "guest": "مهمان نمونه 3"
+      "thumbnail": "/images/img_8.jpg",
+      "guest": "سپهر سرلک"
     },
     {
       "id": 4,
-      "title": "مصاحبه با یک کارآفرین موفق",
+      "title": "موزیک، استریمینگ و درآمد آنلاین",
       "youtube_url": "https://www.youtube.com/embed/7XyQk7yNydk",
-      "thumbnail": "https://i.ytimg.com/vi/7XyQk7yNydk/hqdefault.jpg",
-      "guest": "مهمان نمونه 4"
+      "thumbnail": "/images/img_6.jpg",
+      "guest": "کیا رکنی"
     },
     {
       "id": 5,
-      "title": "تحلیل بازارهای جهانی",
+      "title": "هوش مصنوعی؛ هرآنچه پیشرو داریم",
       "youtube_url": "https://www.youtube.com/embed/8XyQk7yNydk",
-      "thumbnail": "https://i.ytimg.com/vi/8XyQk7yNydk/hqdefault.jpg",
-      "guest": "مهمان نمونه 5"
+      "thumbnail": "/images/img_4.jpg",
+      "guest": " کوشیار عظیمیان"
     },
     {
       "id": 6,
-      "title": "تکنولوژی‌های آینده",
+      "title": "تعبیر یک دنیا؛ واقعیت مجازی، واقعیت افزوده",
       "youtube_url": "https://www.youtube.com/embed/9XyQk7yNydk",
-      "thumbnail": "https://i.ytimg.com/vi/9XyQk7yNydk/hqdefault.jpg",
-      "guest": "مهمان نمونه 6"
+      "thumbnail": "/images/img_5.jpg",
+      "guest": " مجتبی طباطبایی"
     },
     {
-      "id": 7,
-      "title": "مدیریت زمان",
-      "youtube_url": "https://www.youtube.com/embed/10XyQk7yNyd",
-      "thumbnail": "https://i.ytimg.com/vi/10XyQk7yNyd/hqdefault.jpg",
-      "guest": "مهمان نمونه 7"
+      "id":7,
+      "title": "تعبیر یک دنیا؛ واقعیت مجازی، واقعیت افزوده",
+      "youtube_url": "https://www.youtube.com/embed/9XyQk7yNydk",
+      "thumbnail": "/images/img_13.jpg",
+      "guest": "مارتین بصیری"
     },
     {
       "id": 8,
-      "title": "روانشناسی کسب‌وکار",
-      "youtube_url": "https://www.youtube.com/embed/11XyQk7yNyd",
-      "thumbnail": "https://i.ytimg.com/vi/11XyQk7yNyd/hqdefault.jpg",
-      "guest": "مهمان نمونه 8"
+      "title": "Engineering Manager at Frame.io, an Adobe Company",
+      "youtube_url": "https://www.youtube.com/embed/9XyQk7yNydk",
+      "thumbnail": "/images/img_12.jpg",
+      "guest": "سینا جزایری"
     },
     {
       "id": 9,
-      "title": "داستان‌های شکست و موفقیت",
-      "youtube_url": "https://www.youtube.com/embed/12XyQk7yNyd",
-      "thumbnail": "https://i.ytimg.com/vi/12XyQk7yNyd/hqdefault.jpg",
-      "guest": "مهمان نمونه 9"
+      "title": "سرآوا",
+      "youtube_url": "https://www.youtube.com/embed/9XyQk7yNydk",
+      "thumbnail": "/images/img_14.jpg",
+      "guest": "سعید رحمانی"
     },
     {
       "id": 10,
-      "title": "جمع‌بندی فصل اول",
-      "youtube_url": "https://www.youtube.com/embed/13XyQk7yNyd",
-      "thumbnail": "https://i.ytimg.com/vi/13XyQk7yNyd/hqdefault.jpg",
-      "guest": "مهمان نمونه 10"
+      "title": "عضو اتاق بازرگانی تهران",
+      "youtube_url": "https://www.youtube.com/embed/9XyQk7yNydk",
+      "thumbnail": "/images/img_11.jpg",
+      "guest": "فرزین فردیس"
     },
     {
       "id": 11,
-      "title": "معرفی و شروع کار",
-      "youtube_url": "https://www.youtube.com/embed/4XyQk7yNydk",
-      "thumbnail": "https://i.ytimg.com/vi/4XyQk7yNydk/hqdefault.jpg",
-      "guest": "مهمان نمونه 11"
+      "title": "خلاقیت",
+      "youtube_url": "https://www.youtube.com/embed/9XyQk7yNydk",
+      "thumbnail": "/images/img_10.jpg",
+      "guest": "هوتن هاشمی"
     },
     {
       "id": 12,
-      "title": "داستان‌های استارتاپی",
-      "youtube_url": "https://www.youtube.com/embed/5zXyQk7yNyd",
-      "thumbnail": "https://i.ytimg.com/vi/5zXyQk7yNyd/hqdefault.jpg",
-      "guest": "مهمان نمونه 12"
-    },
-    {
-      "id": 13,
-      "title": "چالش‌های کار تیمی",
-      "youtube_url": "https://www.youtube.com/embed/6XyQk7yNydk",
-      "thumbnail": "https://i.ytimg.com/vi/6XyQk7yNydk/hqdefault.jpg",
-      "guest": "مهمان نمونه 13"
-    },
-    {
-      "id": 14,
-      "title": "مصاحبه با یک کارآفرین موفق",
-      "youtube_url": "https://www.youtube.com/embed/7XyQk7yNydk",
-      "thumbnail": "https://i.ytimg.com/vi/7XyQk7yNydk/hqdefault.jpg",
-      "guest": "مهمان نمونه 14"
-    },
-    {
-      "id": 15,
-      "title": "تحلیل بازارهای جهانی",
-      "youtube_url": "https://www.youtube.com/embed/8XyQk7yNydک",
-      "thumbnail": "https://i.ytimg.com/vi/8XyQk7yNydک/hqdefault.jpg",
-      "guest": "مهمان نمونه 15"
-    },
-    {
-      "id": 16,
-      "title": "تکنولوژی‌های آینده",
+      "title": "زندگی",
       "youtube_url": "https://www.youtube.com/embed/9XyQk7yNydk",
-      "thumbnail": "https://i.ytimg.com/vi/9XyQk7yNydk/hqdefault.jpg",
-      "guest": "مهمان نمونه 16"
-    },
-    {
-      "id": 17,
-      "title": "مدیریت زمان",
-      "youtube_url": "https://www.youtube.com/embed/10XyQk7yNyd",
-      "thumbnail": "https://i.ytimg.com/vi/10XyQk7yNyd/hqdefault.jpg",
-      "guest": "مهمان نمونه 17"
-    },
-    {
-      "id": 18,
-      "title": "روانشناسی کسب‌وکار",
-      "youtube_url": "https://www.youtube.com/embed/11XyQk7yNyd",
-      "thumbnail": "https://i.ytimg.com/vi/11XyQk7yNyd/hqdefault.jpg",
-      "guest": "مهمان نمونه 18"
-    },
-    {
-      "id": 19,
-      "title": "داستان‌های شکست و موفقیت",
-      "youtube_url": "https://www.youtube.com/embed/12XyQk7yNyd",
-      "thumbnail": "https://i.ytimg.com/vi/12XyQk7yNyd/hqdefault.jpg",
-      "guest": "مهمان نمونه 19"
-    },
-    {
-      "id": 20,
-      "title": "جمع‌بندی فصل اول",
-      "youtube_url": "https://www.youtube.com/embed/13XyQk7yNyd",
-      "thumbnail": "https://i.ytimg.com/vi/13XyQk7yNyd/hqdefault.jpg",
-      "guest": "مهمان نمونه 20"
-    }
+      "thumbnail": "/images/img_9.jpg",
+      "guest": "آرش میر"    
+    }    
   ]
 }

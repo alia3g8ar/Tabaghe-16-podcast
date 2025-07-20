@@ -1,7 +1,7 @@
-import image1 from "../assets/عکس 1.jfif";
-import image2 from "../assets/عکس 2.jfif";
-import image3 from "../assets/عکس 3.jfif";
-import image4 from "../assets/عکس اصلی.jfif";
+import image1 from "/images/img_1.jfif";
+import image2 from "/images/img_2.jfif";
+import image3 from "/images/img_3.jfif";
+import image4 from "/images/img_4.jpg";
 
 const EpisodesStar = () => {
   const episodes = [
