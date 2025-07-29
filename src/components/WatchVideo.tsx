@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ReactPlayer from "react-player";
 
 interface Video {
   id: number;
@@ -37,8 +36,20 @@ const WatchVideo = () => {
     return (
       <div className="text-white text-center py-8">در حال بارگذاری...</div>
     );
+
   if (!video)
     return <div className="text-red-500 text-center py-8">ویدیو یافت نشد!</div>;
+
+  // استخراج کد ویدیوی یوتیوب از URL
+  const extractYoutubeId = (url: string) => {
+    const match = url.match(/(?:youtu\.be\/|v=)([^&?/]+)/);
+    return match ? match[1] : null;
+  };
+
+  const youtubeId = extractYoutubeId(video.youtube_url);
+  const embedUrl = youtubeId
+    ? `https://www.youtube.com/embed/${youtubeId}`
+    : "";
 
   return (
     <div className="w-full flex justify-center mt-10">
@@ -47,17 +58,19 @@ const WatchVideo = () => {
           {video.title}
         </h1>
 
-        {/* پلیر یوتیوب */}
-        <div className="player-wrapper">
-          <ReactPlayer
-            url={video.youtube_url}
-            controls={true}
-            width="100%"
-            height="400px"
-            className="react-player"
-          />
+        <div className="relative pb-[56.25%] h-0 overflow-hidden mb-6">
+          {youtubeId && (
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src={embedUrl}
+              title={video.title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          )}
         </div>
-        {/* اطلاعات ویدیو */}
+
         <div className="text-white text-right">
           <p className="font-IRANYekanBold">مهمان: {video.guest}</p>
           <p>مدت زمان: {video.duration}</p>

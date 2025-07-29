@@ -47,7 +47,7 @@ const Cooperation = () => {
 
           <textarea
             placeholder="توضیحی درباره‌ی شرکت"
-            rows="4"
+            rows={4}
             className="md:col-span-2 w-full bg-gray-800 text-white p-3 rounded resize-none"
           ></textarea>
         </form>
