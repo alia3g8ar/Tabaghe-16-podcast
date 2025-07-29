@@ -4,10 +4,11 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 export default function NotFound() {
     return (
-      <div className="flex flex-col min-h-screen bg-black text-white ">
+      <>
         <Navbar />
+      <div className="flex flex-col min-h-screen bg-black text-white ">
   
-        <main className="flex-grow flex flex-col items-center justify-center px-4 my-28 sm:px-6 md:px-8">
+        <main className="flex-grow flex flex-col items-center justify-center px-4  sm:px-6 md:px-8">
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold">404</h1>
           <p className="text-lg sm:text-xl md:text-2xl mt-4 text-center max-w-md">
             صفحه‌ای که دنبالشی پیدا نشد!
@@ -20,8 +21,9 @@ export default function NotFound() {
           </Link>
         </main>
   
-        <Footer />
       </div>
+        <Footer />
+      </>
     );
   }
   

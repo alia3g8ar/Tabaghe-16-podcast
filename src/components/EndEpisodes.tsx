@@ -6,36 +6,47 @@ import image4 from "/images/img_4.jpg";
 const EndEpisodes = () => {
   const episodes = [
     {
+      id: 1,
       UrlImg: image1,
       title: "سرآوا",
       guest: "سعید رحمانی",
       time: "01:25:45",
     },
     {
+      id: 2,
+
       UrlImg: image2,
       title: "استراتژی پروکورین",
       guest: "سعید رحمانی",
       time: "01:25:45",
     },
     {
+      id: 3,
+
       UrlImg: image3,
       title: "مدیریت مهندسی",
       guest: "سعید رحمانی",
       time: "01:25:45",
     },
     {
+      id: 4,
+
       UrlImg: image4,
       title: "هوش مصنوعی",
       guest: "سعید رحمانی",
       time: "01:25:45",
     },
     {
+      id: 5,
+
       UrlImg: image3,
       title: "مدیریت مهندسی",
       guest: "سعید رحمانی",
       time: "01:25:45",
     },
     {
+      id: 6,
+
       UrlImg: image4,
       title: "هوش مصنوعی",
       guest: "سعید رحمانی",
@@ -57,13 +68,17 @@ const EndEpisodes = () => {
                 className="p-2 flex items-center rounded-[15px] shadow-lg transform transition-transform duration-300 hover:scale-105"
                 style={{
                   background:
-                    "linear-gradient(135deg, rgba(17, 24, 39, 0.8) 0%, rgba(17, 24, 39, 0.4) 100%)",
+                    "linear-gradient(252.35deg, rgba(255, 255, 255, 0.2) 28.3%, rgba(0, 0, 0, 0) 65.06%)",
+                  // border: "1px solid",
+                  // borderImageSource: "linear-gradient(252.35deg, rgba(255, 255, 255, 0.2) 28.3%, rgba(0, 0, 0, 0) 75.06%)",
+                  // borderImageSlice: 1,
                 }}
               >
+                {/* محتوای کارت بدون تغییر */}
                 <div className="text-white ml-2 text-xl font-IRANYekanExtraBold leading-tight font-bold">
-                  ۱۶.
+                  {episode.id} .
                 </div>
-                <div className="relative h-16  w-28 rounded-[5px] overflow-hidden ml-2">
+                <div className="relative h-16 w-28 rounded-[5px] overflow-hidden ml-2">
                   <img
                     src={episode.UrlImg}
                     alt={episode.title || "تصویر اپیزود"}
@@ -71,7 +86,7 @@ const EndEpisodes = () => {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <h4 className="text-white text-xl font-IRANYekanExtraBold leading-tight text-right ">
+                  <h4 className="text-white text-xl font-IRANYekanExtraBold leading-tight text-right">
                     {episode.title}
                   </h4>
                   {episode.guest && (

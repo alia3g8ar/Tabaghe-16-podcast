@@ -15,18 +15,16 @@ const Navbar: React.FC = () => {
     setShowSearch(!showSearch);
   };
 
-
-    const handleClick = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
-    <nav className="w-[100%] pl-[13px] flex justify-center flex-col font-IRANSans bg-black backdrop-blur-sm sticky top-0 pt-4 z-50">
+    <nav className="max-w-6xl mx-auto pl-[13px] flex justify-center flex-col font-IRANSans bg-black backdrop-blur-sm sticky top-0 pt-4 z-50">
       <div className="w-[98%] mx-auto flex justify-between items-center py-2 md:py-4">
         {/* لوگو و منو */}
         <div className="flex items-center space-x-4 rtl:space-x-reverse">
-          <div className="flex-shrink-0 mr-[20px] ml-[10px] md:ml-[20px]">
+          <div className="flex-shrink-0  ml-[10px] md:ml-[20px]">
             <img
               src={logo}
               alt="طبقه 16"
@@ -63,7 +61,7 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <Link
-                to="/support"
+                to="/donate"
                 onClick={handleClick}
                 className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium"
               >
@@ -72,7 +70,7 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <Link
-                to="/collaboration"
+                to="/cooperation"
                 onClick={handleClick}
                 className="text-white hover:text-gray-300 transition-colors duration-300 text-sm font-medium"
               >
@@ -149,14 +147,14 @@ const Navbar: React.FC = () => {
             ویدیوهای کوتاه
           </Link>
           <Link
-            to="/support"
+            to="/donate"
             onClick={handleClick}
             className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium"
           >
             حمایت
           </Link>
           <Link
-            to="/collaboration"
+            to="/cooperation"
             onClick={handleClick}
             className="block text-white hover:text-gray-300 px-3 py-2 rounded-md transition-colors duration-300 text-sm font-medium"
           >

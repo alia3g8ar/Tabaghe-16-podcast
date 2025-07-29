@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useCallback } from "react";
 import Pagination from "./Pagination";
+import { useNavigate } from "react-router-dom";
 
 interface Video {
   id: number;
@@ -16,6 +17,7 @@ const Podcasts = (): React.ReactElement => {
   const [error, setError] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const videosPerPage = 12;
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchVideos = async () => {
@@ -86,32 +88,18 @@ const Podcasts = (): React.ReactElement => {
               <div
                 key={video.id}
                 className="rounded-t shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer"
-                onClick={() =>
-                  window.open(
-                    video.youtube_url.replace("embed", "watch"),
-                    "_blank"
-                  )
-                }
+                onClick={() => navigate(`/watch/${video.id}`)}
               >
+                <div className="relative p-[1px] rounded-lg bg-gradient-to-r from-black to-white/40">
+                  <div className="rounded-lg overflow-hidden">
+                    <img
+                      src={video.thumbnail}
+                      alt={video.title}
+                      className="w-full h-42 md:h-50 object-cover"
+                    />
+                  </div>
+                </div>
 
-
-
-<div className="relative p-[1px] rounded-lg bg-gradient-to-r from-black to-white/40">
-  <div className="rounded-lg overflow-hidden">
-    <img
-      src={video.thumbnail}
-      alt={video.title}
-      className="w-full h-42 md:h-50 object-cover"
-    />
-  </div>
-</div>
-
-
-
-
-
-
-                
                 <div className="bg-black py-2">
                   <h4 className="text-white text-[12px] font-IRANYekanExtraBold text-right mb-4 line-clamp-2">
                     {video.title}
