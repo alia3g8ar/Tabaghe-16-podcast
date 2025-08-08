@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { fetchVideo } from "../utils/api";
 
 interface Video {
   id: number;
@@ -16,11 +17,9 @@ const WatchVideo = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchVideo = async () => {
+    const loadVideo = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/videos/${id}`);
-        if (!response.ok) throw new Error("ویدیو یافت نشد");
-        const data = await response.json();
+        const data = await fetchVideo(id!);
         setVideo(data);
       } catch (error) {
         console.error(error);
@@ -29,7 +28,7 @@ const WatchVideo = () => {
       }
     };
 
-    fetchVideo();
+    loadVideo();
   }, [id]);
 
   if (loading)

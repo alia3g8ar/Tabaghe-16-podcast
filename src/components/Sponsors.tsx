@@ -12,8 +12,8 @@ export default function Sponsors() {
   ];
 
   return (
-    <div className="w-full py-4 md:py-8 lg:py-12 px-4">
-      <div className="max-w-7xl mx-auto flex justify-center items-center">
+    <div className="w-full py-4 pt-[2rem] sm:pt-[1rem] md:py-8 lg:py-12 px-4">
+      <div className="max-w-[80%] mx-auto flex justify-center items-center">
         <div
           className="
             py-6 px-4 sm:px-6 md:px-8 lg:px-10
@@ -36,14 +36,14 @@ export default function Sponsors() {
               حامیان
             </h3>
 
-            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 lg:gap-12">
+            <div className=" grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-12 px-[2rem] md:px-[2px]">
               {platforms.map((platform, index) => (
                 <div
                   key={index}
                   className="
-                    w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28
-                    flex items-center justify-center
-                    rounded-lg sm:rounded-xl p-2
+                    w-24 h-24 md:w-28 md:h-28 lg:w-28 lg:h-28
+                    
+                    p-2
                     transition-all duration-300 ease-in-out
                     hover:scale-110 cursor-pointer"
                 >

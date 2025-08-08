@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import Pagination from "./Pagination";
 import { useNavigate } from "react-router-dom";
+import { fetchVideos } from "../utils/api";
 
 interface Video {
   id: number;
@@ -20,13 +21,9 @@ const Podcasts = (): React.ReactElement => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchVideos = async () => {
+    const loadVideos = async () => {
       try {
-        const response = await fetch("http://localhost:3000/videos");
-        if (!response.ok) {
-          throw new Error("Failed to fetch videos");
-        }
-        const data = await response.json();
+        const data = await fetchVideos();
         setVideos(data);
       } catch (err) {
         setError(
@@ -37,7 +34,7 @@ const Podcasts = (): React.ReactElement => {
       }
     };
 
-    fetchVideos();
+    loadVideos();
   }, []);
 
   const handlePageChange = useCallback((page: number) => {

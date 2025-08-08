@@ -26,11 +26,11 @@ const shortVideos = [
 const ShortVideos = () => {
   return (
     <div className="w-full bg-black py-10 flex justify-center">
-      <div className="w-[70%]">
+      <div className="w-[90%] sm:w-[80%]">
         <h2 className="text-white text-center text-xl sm:text-2xl font-IRANYekanExtraBold mb-6">
           ویدیوهای کوتاه
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {shortVideos.map((video, index) => (
             <div
               key={index}
